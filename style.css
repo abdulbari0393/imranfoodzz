@@ -1,0 +1,252 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root {
+    --nav-height: 33px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* logo and image styling */
+#logo {
+    margin: 5px 34px;
+}
+
+#logo img {
+    margin: 3px 13px;
+    height: 77px;
+    border-radius: 50%;
+}
+
+/* navigation list styling */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.2rem;
+
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 8px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(2, 0, 109);
+    background-color: azure;
+    border-radius: 22px;
+}
+
+/* section home */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 33px 150px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000px;
+}
+
+#home::before {
+    content: "";
+    background: url('img/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 115%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#home p {
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Averia Serif Libre', cursive;
+
+}
+
+/* section services */
+.section-container {
+    position: relative;
+}
+
+#service {
+    margin: 2px;
+    display: flex;
+
+}
+
+#service .box {
+    border: 5px solid rgb(237, 112, 75);
+    background-color: rgba(199, 197, 170, 0.712);
+    border-radius: 25px;
+    width: 100%;
+    margin: 3px;
+
+}
+
+#service .box img {
+    display: block;
+    border-radius: 40px;
+    padding: 12px;
+    width:150px;
+    height:150px;
+    margin: auto;
+}
+
+#service .box p {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+/* client section  */
+#client-section {
+    height: 400px;
+    position: relative;
+    margin-top: 80px;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client::before {
+    content: "";
+    position: absolute;
+    background:url('img/bg1.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#client img {
+    height: 55px;
+
+}
+
+.client-item {
+    padding: 33px;
+}
+
+/* section contact */
+#contact{
+    position: relative;
+    height:554px;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    background:url('img/contact.jpg') no-repeat center/cover;
+    width: 100%;
+    display: block;
+    height: 560px;
+    z-index:-1;
+    opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    /* margin-top: 2px; */
+    align-items: center;
+    justify-content: center;
+}
+#contact-box form{
+    margin: 22px;
+    font-size:22px;
+}
+#contact-items input{
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 4px 13px;
+    border: 4px solid rgba(22, 21, 21, 0.582);
+    border-radius: 4px;
+    width: 90%;
+    font-family: 'Averia Serif Libre', cursive;  
+}
+
+
+/* footer */
+footer{
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+    margin-bottom: 32px;
+    padding: 13px;
+}
+
+/* ultility classes */
+.heading-primary {
+    font-size: 3.5rem;
+    font-family: 'Averia Serif Libre', cursive;
+    padding: 17px;
+}
+
+.heading-secondary {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 2.0rem;
+    padding: 17px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 12px;
+    background-color: black;
+    border: 3px solid whitesmoke;
+    border-radius: 22px;
+    color: aliceblue;
+    margin: 33px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(124, 59, 59, 0.644);
+
+}
